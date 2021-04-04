@@ -39,33 +39,38 @@ nav a {
   margin-top: 120px;
 }
 .first-page_content {
-  width: 95%;
   height: 80vh;
   max-width: 2000px;
-  border: red solid thin;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  border: purple solid thick;
+  border-radius: 2em;
+  position: relative;
+  overflow: hidden;
 }
 .first-page_content article {
-  border: blue solid thin;
-  margin: 0 50px;
+  background: white;
+  border: black solid thin;
+  margin: 0 10px;
+  position: absolute;
+  bottom: 12vh;
+  z-index: 1;
+  padding-bottom: 30px;
 }
 .first-page_content article h1 {
-  font-size: calc(3vw + 1.8em);
+  font-size: calc(3vw + 1.2em);
+  margin: 10px 40px;
 }
 .first-page_content article p {
-  font-size: calc(2vw);
+  font-size: 1.1em;
+  margin: 0 40px;
 }
 .first-page_img-wrapper {
-  border: red solid thin;
-  flex: 1;
+  border: green solid thin;
+  position: absolute;
+  top: 0;
 }
 .first-page_img-wrapper img {
   object-fit: fill;
-  width: 50vw;
+  width: 100vw;
   min-width: 450px;
   max-width: 1000px;
-  border: gray solid 15px;
 }
