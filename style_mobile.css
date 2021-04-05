@@ -19,21 +19,42 @@ body {
 header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   z-index: 2;
+  width: 100vw;
 }
 header img {
   object-fit: fill;
-  width: 20vw;
+  width: 120px;
   min-width: 100px;
   max-width: 300px;
-  margin: 10px 0;
+  margin: 5px 10px;
 }
 nav a {
   display: none;
   font-size: calc(1vw + 1em);
   margin: 0 20px;
+}
+
+.hamburger-icon {
+  height: 50px;
+  width: 50px;
+  margin: 0 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.top-line,
+.mid-line,
+.bott-line {
+  width: 80%;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 3.5px 0;
+  border-radius: 2em;
+  transition: all 1s ease-out;
 }
 /********First Page*********/
 .first-page {
