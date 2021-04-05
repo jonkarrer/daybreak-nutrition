@@ -4,12 +4,17 @@
 }
 html,
 body {
-  background: beige;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.first-page_abstract-bg {
+  width: 30vw;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
 }
 /********NAVBAR*********/
 header {
@@ -18,7 +23,6 @@ header {
   position: fixed;
   top: 0;
   z-index: 2;
-  background: red;
 }
 header img {
   object-fit: fill;
@@ -33,15 +37,13 @@ nav a {
 }
 /********First Page*********/
 .first-page {
-  background: snow;
   width: 100vw;
   /*Offset fixed navbar*/
-  margin-top: 120px;
+  margin-top: 80px;
 }
 .first-page_content {
   height: 80vh;
   max-width: 2000px;
-  border: purple solid thick;
   border-radius: 2em;
   position: relative;
   overflow: hidden;
@@ -51,7 +53,7 @@ nav a {
   border: black solid thin;
   margin: 0 10px;
   position: absolute;
-  bottom: 12vh;
+  bottom: 18vh;
   z-index: 1;
   padding-bottom: 30px;
 }
