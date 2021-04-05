@@ -54,7 +54,7 @@ nav a {
   background: rgba(0, 0, 0, 0.8);
   margin: 3.5px 0;
   border-radius: 2em;
-  transition: all 1s ease-out;
+  transition: all 0.5s ease-out;
 }
 /********First Page*********/
 .first-page {
@@ -74,7 +74,7 @@ nav a {
   border: lightgray solid thin;
   margin: 0 10px;
   position: absolute;
-  bottom: 0vh;
+  bottom: 1.5vh;
   z-index: 1;
   padding-bottom: 20px;
   animation-name: phase-in;
