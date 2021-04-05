@@ -1,6 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  line-height: 1.4;
 }
 html,
 body {
@@ -11,11 +12,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 .first-page_abstract-bg {
-  width: 30vw;
-  position: absolute;
-  bottom: 0;
-  z-index: -1;
-}
+  display: none;
+} /*turn off background*/
+
 /********NAVBAR*********/
 header {
   display: flex;
@@ -26,12 +25,13 @@ header {
 }
 header img {
   object-fit: fill;
-  width: 12vw;
-  min-width: 150px;
+  width: 20vw;
+  min-width: 100px;
   max-width: 300px;
-  margin: 10px 50px;
+  margin: 10px 0;
 }
 nav a {
+  display: none;
   font-size: calc(1vw + 1em);
   margin: 0 20px;
 }
@@ -39,7 +39,7 @@ nav a {
 .first-page {
   width: 100vw;
   /*Offset fixed navbar*/
-  margin-top: 80px;
+  margin-top: 65px;
 }
 .first-page_content {
   height: 80vh;
@@ -50,23 +50,33 @@ nav a {
 }
 .first-page_content article {
   background: white;
-  border: black solid thin;
+  border: lightgray solid thin;
   margin: 0 10px;
   position: absolute;
-  bottom: 18vh;
+  bottom: 0vh;
   z-index: 1;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+  animation-name: phase-in;
+  animation-duration: 1.2s;
+}
+@keyframes phase-in {
+  from {
+    opacity: 0;
+    transform: translateY(80vh);
+  }
+  to {
+    opacity: 1;
+  }
 }
 .first-page_content article h1 {
-  font-size: calc(3vw + 1.2em);
-  margin: 10px 40px;
+  font-size: 2.7em;
+  margin: 10px 20px;
 }
 .first-page_content article p {
-  font-size: 1.1em;
-  margin: 0 40px;
+  font-size: 1.2em;
+  margin: 0 20px;
 }
 .first-page_img-wrapper {
-  border: green solid thin;
   position: absolute;
   top: 0;
 }

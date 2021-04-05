@@ -1,6 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  line-height: 1.4;
 }
 html,
 body {
@@ -74,7 +75,7 @@ nav a {
 @keyframes phase-in {
   from {
     opacity: 0;
-    transform: translateY(80vh);
+    transform: translate(80vh);
   }
   to {
     opacity: 1;
