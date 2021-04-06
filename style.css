@@ -71,7 +71,7 @@ nav a {
   max-width: 1000px;
   border: black solid thick;
   animation-name: phase-in;
-  animation-duration: 1.2s;
+  animation-duration: 1s;
 }
 @keyframes phase-in {
   from {
