@@ -1,7 +1,6 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  line-height: 1.4;
 }
 html,
 body {
@@ -60,6 +59,7 @@ nav a {
 }
 .first-page_content article p {
   font-size: calc(2vw);
+  line-height: 1.4;
 }
 .first-page_img-wrapper {
   flex: 1;

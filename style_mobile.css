@@ -1,7 +1,9 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  line-height: 1.4;
+}
+html {
+  background: beige;
 }
 html,
 body {
@@ -10,6 +12,17 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+main {
+  position: fixed;
+  top: 65px;
+  bottom: 0;
+  border-radius: 2em 2em 0 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition: all 0.5s ease;
+  z-index: 1;
+  background: snow;
 }
 .first-page_abstract-bg {
   display: none;
@@ -22,7 +35,7 @@ header {
   justify-content: space-between;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 0;
   width: 100vw;
 }
 header img {
@@ -32,12 +45,17 @@ header img {
   max-width: 300px;
   margin: 5px 10px;
 }
-nav a {
-  display: none;
-  font-size: calc(1vw + 1em);
-  margin: 0 20px;
+nav {
+  display: grid;
+  position: absolute;
+  right: 20px;
+  top: 10vh;
 }
-
+nav a {
+  font-size: 1.7em;
+  margin: 10px;
+  border-bottom: black solid thin;
+}
 .hamburger-icon {
   height: 50px;
   width: 50px;
@@ -60,14 +78,13 @@ nav a {
 .first-page {
   width: 100vw;
   /*Offset fixed navbar*/
-  margin-top: 65px;
+  overflow: scroll;
 }
 .first-page_content {
   height: 80vh;
   max-width: 2000px;
-  border-radius: 2em;
   position: relative;
-  overflow: hidden;
+  overflow: hidden; /*Cuts image off*/
 }
 .first-page_content article {
   background: white;
@@ -96,6 +113,7 @@ nav a {
 .first-page_content article p {
   font-size: 1.2em;
   margin: 0 20px;
+  line-height: 1.4;
 }
 .first-page_img-wrapper {
   position: absolute;
@@ -104,6 +122,6 @@ nav a {
 .first-page_img-wrapper img {
   object-fit: fill;
   width: 100vw;
-  min-width: 450px;
+  min-width: 450px; /*Crops image perfectly*/
   max-width: 1000px;
 }
