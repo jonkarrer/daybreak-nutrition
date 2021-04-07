@@ -139,3 +139,9 @@ nav a {
   min-width: 450px; /*Crops image perfectly*/
   max-width: 1000px;
 }
+
+/********Second Page*********/
+.second-page_abstract-bg {
+  float: right;
+  width: 60vw;
+}
