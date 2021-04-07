@@ -2,6 +2,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --main-grey: rgba(0, 0, 0, 0.8);
+}
 html {
   background: beige;
 }
@@ -15,9 +18,9 @@ body {
 }
 main {
   position: fixed;
-  top: 65px;
+  top: 60px;
   bottom: 0;
-  border-radius: 2em 2em 0 0;
+  border-radius: 1.5em 1.5em 0 0;
   overflow-y: scroll;
   overflow-x: hidden;
   transition: all 0.5s ease;
@@ -26,7 +29,7 @@ main {
 }
 .first-page_abstract-bg {
   display: none;
-} /*turn off background*/
+} /*turn off desktop background*/
 
 /********NAVBAR*********/
 header {
@@ -46,15 +49,22 @@ header img {
   margin: 5px 10px;
 }
 nav {
-  display: grid;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   position: absolute;
-  right: 20px;
   top: 10vh;
+  width: 100vw;
 }
 nav a {
-  font-size: 1.7em;
-  margin: 10px;
-  border-bottom: black solid thin;
+  font-size: 1.4em;
+  padding: 1px 10px 2px;
+  margin: 7px;
+  border: var(--main-grey) solid thin;
+  color: var(--main-grey);
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 2em;
+  font-weight: bold;
 }
 .hamburger-icon {
   height: 50px;
@@ -69,7 +79,7 @@ nav a {
 .bott-line {
   width: 80%;
   height: 4px;
-  background: rgba(0, 0, 0, 0.8);
+  background: var(--main-grey);
   margin: 3.5px 0;
   border-radius: 2em;
   transition: all 0.5s ease-out;
@@ -81,19 +91,18 @@ nav a {
   overflow: scroll;
 }
 .first-page_content {
-  height: 80vh;
+  height: 90vh;
   max-width: 2000px;
   position: relative;
-  overflow: hidden; /*Cuts image off*/
+  overflow-x: hidden; /*Cuts image off*/
 }
 .first-page_content article {
   background: white;
   border: lightgray solid thin;
   margin: 0 10px;
   position: absolute;
-  bottom: 1.5vh;
+  top: 40vh;
   z-index: 1;
-  padding-bottom: 20px;
   animation-name: phase-in;
   animation-duration: 1.2s;
 }
