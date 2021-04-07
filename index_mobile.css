@@ -5,6 +5,7 @@
 :root {
   --main-grey: rgba(0, 0, 0, 0.8);
 }
+/********General*********/
 html {
   background: beige;
 }
@@ -84,6 +85,7 @@ nav a {
   border-radius: 2em;
   transition: all 0.5s ease-out;
 }
+
 /********First Page*********/
 .first-page {
   width: 100vw;
@@ -103,11 +105,13 @@ nav a {
   position: absolute;
   top: 40vh;
   z-index: 1;
-  animation-name: phase-in;
+  animation-name: phase-in-article;
   animation-duration: 1.2s;
   padding-bottom: 20px;
+  box-shadow: lightgray 0px 10px 20px;
+  border-radius: 0.3em;
 }
-@keyframes phase-in {
+@keyframes phase-in-article {
   from {
     opacity: 0;
     transform: translateY(80vh);

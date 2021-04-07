@@ -91,3 +91,9 @@ nav a {
     opacity: 1;
   }
 }
+
+/********Second Page*********/
+.second-page_abstract-bg {
+  float: right;
+  width: 60vw;
+}
