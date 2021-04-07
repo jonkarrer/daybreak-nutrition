@@ -146,11 +146,13 @@ h1.second-page_heading {
   font-size: calc(0.5vw + 0.5em);
   margin: 0 80px;
   text-align: left;
+  line-height: 1.4;
 }
 @media (min-width: 1500px) {
   .second-page p {
     font-size: 1vw;
     margin: 0 100px;
     text-align: left;
+    line-height: 1.4;
   }
 }

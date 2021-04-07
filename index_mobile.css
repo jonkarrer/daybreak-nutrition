@@ -8,7 +8,7 @@
 }
 /********General*********/
 html {
-  background: var(--main-beige);
+  background: var(--main-grey);
 }
 html,
 body {
@@ -62,9 +62,9 @@ nav a {
   font-size: 1.4em;
   padding: 1px 10px 2px;
   margin: 7px;
-  border: var(--main-grey) solid thin;
-  color: var(--main-grey);
-  background: rgba(0, 0, 0, 0.06);
+  border: white solid thin;
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
   border-radius: 2em;
   font-weight: bold;
 }
@@ -81,7 +81,7 @@ nav a {
 .bott-line {
   width: 80%;
   height: 4px;
-  background: var(--main-grey);
+  background: white;
   margin: 3.5px 0;
   border-radius: 2em;
   transition: all 0.5s ease-out;
@@ -144,7 +144,7 @@ nav a {
 
 /********Second Page*********/
 .second-page {
-  height: 100vh;
+  height: auto;
   width: 100vw;
   display: grid;
   grid-template-rows: 100px auto;
@@ -152,7 +152,7 @@ nav a {
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
-  padding-top: 150px;
+  padding-top: 70px;
 }
 h1.second-page_heading {
   text-align: center;
@@ -162,7 +162,9 @@ h1.second-page_heading {
 }
 .icon-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
+  padding-top: 40px;
 }
 .smoothie,
 .tea,
@@ -178,24 +180,19 @@ h1.second-page_heading {
 .blender img {
   object-fit: fill;
   width: 15vw;
-  min-width: 200px;
+  min-width: 100px;
   max-width: 800px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 .second-page h2 {
   font-size: calc(1vw + 1.2em);
   color: var(--main-grey);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .second-page p {
-  font-size: calc(0.5vw + 0.5em);
+  font-size: calc(1vw + 0.5em);
   margin: 0 80px;
   text-align: left;
-}
-@media (min-width: 1500px) {
-  .second-page p {
-    font-size: 1vw;
-    margin: 0 100px;
-    text-align: left;
-  }
+  padding-bottom: 40px;
+  line-height: 1.5;
 }
