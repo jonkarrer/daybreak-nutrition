@@ -103,11 +103,16 @@ nav a {
   width: 100vw;
   display: grid;
   grid-template-rows: 100px auto;
-  background-image: url("./assets/abstracts/sec_page_abstract_bg.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
-  padding-top: 150px;
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 700px;
+}
+.second-page_abstract-bg {
+  position: absolute;
+  z-index: -1;
+  object-fit: fill;
+  width: 100vw;
+  bottom: 0;
 }
 h1.second-page_heading {
   text-align: center;
@@ -155,4 +160,68 @@ h1.second-page_heading {
     text-align: left;
     line-height: 1.4;
   }
+}
+
+/********Third Page*********/
+.third-page {
+  height: 100vh;
+  width: 100vw;
+  background: var(--main-beige);
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 2000px;
+}
+.third-page_abstract {
+  margin: auto;
+  object-fit: fill;
+  width: 40vw;
+}
+.images-wrapper {
+  background-image: url("./assets/abstracts/third_page_ab.svg");
+  width: 60vw;
+  height: 90vh;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+li {
+  height: 250px;
+  flex-grow: 1;
+  margin: 20px;
+}
+li:last-child {
+  flex-grow: 10;
+}
+.images-container img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+.third-page article {
+  width: 70vw;
+}
+.third-page article h1 {
+  font-size: calc(3vw + 1.8em);
+  margin: 60px 50px;
+}
+.menu-giant-button {
+  text-align: center;
+  border: var(--main-grey) solid thin;
+  font-size: 3em;
+  border-radius: 2em;
+  margin: 40px 100px;
+}
+.location-giant-button {
+  text-align: center;
+  border: var(--main-grey) solid thin;
+  font-size: 3em;
+  border-radius: 2em;
+  margin: 25px 100px;
 }
