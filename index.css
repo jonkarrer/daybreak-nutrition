@@ -30,8 +30,8 @@ header {
 }
 header img {
   object-fit: fill;
-  width: 12vw;
-  min-width: 150px;
+  width: 8vw;
+  min-width: 100px;
   max-width: 300px;
   margin: 10px 50px;
 }
