@@ -101,11 +101,12 @@ nav a {
 .second-page {
   height: 100vh;
   width: 100vw;
-  display: grid;
-  grid-template-rows: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   position: relative;
-  padding-top: 200px;
-  padding-bottom: 700px;
+  padding-top: 100px;
 }
 .second-page_abstract-bg {
   position: absolute;
@@ -123,6 +124,7 @@ h1.second-page_heading {
 .icon-container {
   display: flex;
   justify-content: space-evenly;
+  max-width: 2000px;
 }
 .smoothie,
 .tea,
@@ -170,7 +172,6 @@ h1.second-page_heading {
   position: relative;
   display: flex;
   align-items: center;
-  max-width: 2000px;
 }
 .third-page_abstract {
   margin: auto;
@@ -180,7 +181,7 @@ h1.second-page_heading {
 .images-wrapper {
   background-image: url("./assets/abstracts/third_page_ab.svg");
   width: 60vw;
-  height: 90vh;
+  height: 80vh;
   margin-left: 50px;
   display: flex;
   align-items: center;
@@ -191,10 +192,22 @@ h1.second-page_heading {
   flex-wrap: wrap;
 }
 li {
-  height: 250px;
+  height: calc(10vh + 7vw);
+  max-height: 250px;
+  min-height: 100px;
   flex-grow: 1;
-  margin: 20px;
+  margin: 5px;
 }
+@media (min-width: 1500px) {
+  li {
+    height: calc(10vh + 7vw);
+    max-height: 250px;
+    min-height: 100px;
+    flex-grow: 1;
+    margin: 20px;
+  }
+}
+
 li:last-child {
   flex-grow: 10;
 }
@@ -206,10 +219,15 @@ li:last-child {
 }
 .third-page article {
   width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .third-page article h1 {
   font-size: calc(3vw + 1.8em);
-  margin: 60px 50px;
+  margin: 50px 50px;
+  color: var(--main-grey);
 }
 .menu-giant-button {
   text-align: center;
@@ -217,6 +235,8 @@ li:last-child {
   font-size: 3em;
   border-radius: 2em;
   margin: 40px 100px;
+  width: 60%;
+  max-width: 700px;
 }
 .location-giant-button {
   text-align: center;
@@ -224,4 +244,6 @@ li:last-child {
   font-size: 3em;
   border-radius: 2em;
   margin: 25px 100px;
+  width: 60%;
+  max-width: 700px;
 }
