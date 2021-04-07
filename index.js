@@ -1,31 +1,35 @@
-const hamburgerIcon = document.querySelector(".hamburger-icon");
-let isOpen = false;
-//Hamburgur icon animation
-hamburgerIcon.addEventListener("click", openMenu);
-function openMenu() {
-  const hamburgTopLine = document.querySelector(".top-line");
-  const hamburgMidLine = document.querySelector(".mid-line");
-  const hamburgBottLine = document.querySelector(".bott-line");
-  if (!isOpen) {
-    hamburgTopLine.style.transform = `rotate(330deg)`;
-    hamburgBottLine.style.transform = `rotate(330deg)`;
-    hamburgMidLine.style.display = "none";
-    isOpen = true;
-    //Drop front layer for basic menu
-    controlFrontLayer("18vh");
-    return;
+class HamburgerIcon {
+  constructor() {
+    this.icon = document.querySelector(".hamburger-icon");
+    this.topLine = document.querySelector(".top-line");
+    this.midLine = document.querySelector(".mid-line");
+    this.bottLine = document.querySelector(".bott-line");
+    this.icon.addEventListener("click", this.openMenu);
+    this.open = false;
   }
-  hamburgTopLine.style.transform = `rotate(0deg)`;
-  hamburgMidLine.style.display = "block";
-  hamburgBottLine.style.transform = `rotate(0deg)`;
-  isOpen = false;
-  //Set default dropdown position
-  controlFrontLayer("60px");
+  openMenu = () => {
+    if (!this.open) {
+      this.topLine.style.transform = `rotate(330deg)`;
+      this.bottLine.style.transform = `rotate(330deg)`;
+      this.midLine.style.display = "none";
+      this.open = true;
+      this.controlFrontLayer("18vh");
+      return;
+    }
+    this.topLine.style.transform = `rotate(0deg)`;
+    this.midLine.style.display = "block";
+    this.bottLine.style.transform = `rotate(0deg)`;
+    this.open = false;
+    //Set default dropdown position
+    this.controlFrontLayer("60px");
+  };
+  controlFrontLayer(distanceFromTop) {
+    const frontLayer = document.getElementById("front-layer");
+    frontLayer.style.top = `${distanceFromTop}`;
+  }
 }
-function controlFrontLayer(distanceFromTop) {
-  const frontLayer = document.getElementById("front-layer");
-  frontLayer.style.top = `${distanceFromTop}`;
-}
+let initHamburgIcon = new HamburgerIcon();
+
 //Navigation buttons
 let nav = document.getElementById("nav-links");
 let allLinks = nav.children;

@@ -105,6 +105,7 @@ nav a {
   z-index: 1;
   animation-name: phase-in;
   animation-duration: 1.2s;
+  padding-bottom: 20px;
 }
 @keyframes phase-in {
   from {
