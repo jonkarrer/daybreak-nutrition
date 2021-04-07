@@ -159,6 +159,7 @@ h1.second-page_heading {
   color: var(--main-grey);
   font-size: calc(3vw + 1.8em);
   font-weight: 300;
+  margin: 0 40px;
 }
 .icon-container {
   display: flex;
