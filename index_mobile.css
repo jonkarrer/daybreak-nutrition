@@ -20,9 +20,9 @@ body {
 }
 main {
   position: fixed;
-  top: 60px;
+  top: 55px;
   bottom: 0;
-  border-radius: 1.5em 1.5em 0 0;
+  border-radius: 1em 1em 0 0;
   overflow-y: scroll;
   overflow-x: hidden;
   transition: all 0.5s ease;
@@ -45,10 +45,9 @@ header {
 }
 header img {
   object-fit: fill;
-  width: 120px;
-  min-width: 100px;
+  width: 100px;
   max-width: 300px;
-  margin: 5px 10px;
+  margin: 5px 20px;
 }
 nav {
   display: flex;
@@ -69,7 +68,7 @@ nav a {
   font-weight: bold;
 }
 .hamburger-icon {
-  height: 50px;
+  height: 30px;
   width: 50px;
   margin: 0 18px;
   display: flex;
@@ -80,7 +79,7 @@ nav a {
 .mid-line,
 .bott-line {
   width: 80%;
-  height: 4px;
+  height: 2px;
   background: white;
   margin: 3.5px 0;
   border-radius: 2em;
@@ -147,12 +146,16 @@ nav a {
   height: auto;
   width: 100vw;
   display: grid;
-  grid-template-rows: 100px auto;
+  grid-template-rows: auto auto;
+  position: relative;
+  margin-top: 15%;
   background-image: url("./assets/abstracts/sec_page_abstract_bg.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: bottom;
   background-size: cover;
-  padding-top: 70px;
+}
+.second-page_abstract-bg {
+  display: none;
 }
 h1.second-page_heading {
   text-align: center;
@@ -165,7 +168,8 @@ h1.second-page_heading {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding-top: 40px;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 .smoothie,
 .tea,
@@ -175,6 +179,7 @@ h1.second-page_heading {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  margin-top: 20px;
 }
 .smoothie img,
 .tea img,
@@ -196,4 +201,75 @@ h1.second-page_heading {
   text-align: left;
   padding-bottom: 40px;
   line-height: 1.5;
+}
+
+/********Third Page*********/
+.third-page {
+  height: auto;
+  width: 100vw;
+  background: var(--main-beige);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+.images-wrapper {
+  background-image: url("./assets/abstracts/third_page_ab.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: bottom;
+}
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  margin-right: 20px;
+}
+li {
+  list-style: none;
+  height: 80px;
+  flex-grow: 1;
+  margin: 5px;
+}
+li:last-child {
+  flex-grow: 10;
+}
+.images-container img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+.third-page article {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.third-page article h1 {
+  font-size: calc(3vw + 1.8em);
+  margin: 0 30px;
+  color: var(--main-grey);
+  text-align: center;
+}
+.menu-giant-button {
+  text-align: center;
+  border: var(--main-grey) solid thin;
+  font-size: 2em;
+  border-radius: 2em;
+  width: 50%;
+  margin-top: 30px;
+}
+.location-giant-button {
+  text-align: center;
+  border: var(--main-grey) solid thin;
+  font-size: 2em;
+  border-radius: 2em;
+  width: 50%;
+  margin-top: 15px;
 }

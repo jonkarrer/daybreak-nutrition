@@ -21,7 +21,7 @@ class HamburgerIcon {
     this.bottLine.style.transform = `rotate(0deg)`;
     this.open = false;
     //Set default dropdown position
-    this.controlFrontLayer("60px");
+    this.controlFrontLayer("55px");
   };
   controlFrontLayer(distanceFromTop) {
     const frontLayer = document.getElementById("front-layer");
