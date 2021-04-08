@@ -89,7 +89,6 @@ nav a {
 /********First Page*********/
 .first-page {
   width: 100vw;
-  /*Offset fixed navbar*/
   overflow: scroll;
 }
 .first-page_content {
@@ -121,7 +120,7 @@ nav a {
   }
 }
 .first-page_content article h1 {
-  font-size: 3em;
+  font-size: clamp(3em, 6vw, 6em);
   margin: 10px 20px;
   color: var(--main-grey);
 }

@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" media="screen and (min-width: 701px)" href="index.css" />
-    <link rel="stylesheet" media="screen and (max-width: 700px)" href="index_mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 781px)" href="index.css" />
+    <link rel="stylesheet" media="screen and (max-width: 780px)" href="index_mobile.css">
     <title>Daybreak Nutrition</title>
   </head>
   <body>
@@ -66,20 +66,19 @@
       </section>
       <section class="third-page">
         <div class="images-wrapper">
-          <ul class="images-container">
-          <li><img id="simply-good" src="./assets/simply-good.jpg" alt=""></li>
-          <li><img id="two-smoothies" src="./assets/2smoothies.jpg" alt=""></li>
-          <li><img id="kid" src="./assets/happy-kid.jpg" alt=""></li>
-          <li><img src="./assets/multiple-drinks.jpg" alt=""></li>
-            <li><img src="./assets/double_drink.jpg" alt=""></li>
-            <li><img src="./assets/top_down.jpg" alt=""></li>
-              <li><img src="./assets/drink_in_hand.jpg" alt=""></li>
-                <li><img src="./assets/butter_pecan.jpg" alt=""></li>
-                  <li><img src="./assets/del_combo.jpg" alt=""></li>
-                  <li></li>
-        </ul>
+          <button onclick="plusDivs(-1)">&#10094;</button>
+          <div class="slide-wrapper">
+            <img class="mySlides" src="./assets/2smoothies.jpg" style="width:100%">
+            <img class="mySlides" src="./assets/multiple-drinks.jpg" style="width:100%">
+            <img class="mySlides" src="./assets/butter_pecan.jpg" style="width:100%">
+            <img class="mySlides" src="./assets/double_drink.jpg" style="width:100%">
+            <img class="mySlides" src="./assets/drink_in_hand.jpg" style="width:100%">
+            <img class="mySlides" src="./assets/top_down.jpg" style="width:100%">
+            <img class="mySlides" src="./assets/or-both.jpg" style="width:100%">
+            <img class="mySlides" src="./assets/happy-kid.jpg" style="width:100%">   
+          </div>
+          <button onclick="plusDivs(1)">&#10095;</button>
         </div>
-
         <article>
           <h1>Become one of our happy customers!</h1>
           <div class="menu-giant-button">Menu</div>

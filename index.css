@@ -144,7 +144,7 @@ h1.second-page_heading {
   margin-bottom: 20px;
 }
 .second-page p {
-  font-size: clamp(1em, 1vw, 2em);
+  font-size: clamp(0.8em, 1vw, 2em);
   margin: 0 80px;
   text-align: left;
   line-height: 1.4;
@@ -158,55 +158,42 @@ h1.second-page_heading {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .images-wrapper {
   background-image: url("./assets/abstracts/third_page_ab.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   width: 80vw;
   height: 80vh;
+  max-width: 1000px;
   margin-left: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: red solid thin;
+}
+.images-wrapper button {
+  outline: none;
+  border: none;
+  font-size: 5em;
 }
 .images-container {
   display: flex;
-  width: 70%;
+  width: 60%;
   margin: auto;
   flex-wrap: wrap;
-  border: blue solid thin;
 }
-li {
-  height: calc(6vh + 7vw);
-  max-height: 200px;
-  min-height: 50px;
-  flex-grow: 1;
-  margin: 5px;
-}
-@media (min-width: 1500px) {
-  li {
-    height: calc(10vh + 7vw);
-    max-height: 250px;
-    min-height: 100px;
-    flex-grow: 1;
-    margin: 20px;
-  }
-}
-
-li:last-child {
-  flex-grow: 10;
-}
-.images-container img {
-  max-height: 100%;
-  min-width: 100%;
-  object-fit: cover;
-  vertical-align: bottom;
+.mySlides {
+  display: none;
+  object-fit: fill;
+  width: 1vw;
+  min-width: 300px;
+  max-width: 400px;
 }
 .third-page article {
   width: 70vw;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -235,4 +222,7 @@ li:last-child {
   margin: 0px 100px;
   width: 60%;
   max-width: 700px;
+}
+
+.slide-wrapper {
 }
