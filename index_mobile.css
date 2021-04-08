@@ -152,6 +152,7 @@ nav a {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+  padding-bottom: 50px;
 }
 .second-page_abstract-bg {
   display: none;
