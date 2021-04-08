@@ -191,6 +191,15 @@ h1.second-page_heading {
   min-width: 300px;
   max-width: 400px;
 }
+@media (min-width: 1500px) {
+  .mySlides {
+    display: none;
+    object-fit: fill;
+    width: 1vw;
+    min-width: 300px;
+    max-width: 800px;
+  }
+}
 .third-page article {
   width: 70vw;
   max-width: 1000px;
