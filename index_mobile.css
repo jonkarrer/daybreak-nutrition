@@ -168,7 +168,7 @@ h1.second-page_heading {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 50px;
 }
 .smoothie,
@@ -202,7 +202,6 @@ h1.second-page_heading {
   padding-bottom: 40px;
   line-height: 1.5;
 }
-
 /********Third Page*********/
 .third-page {
   height: auto;
@@ -272,4 +271,113 @@ h1.second-page_heading {
   border-radius: 2em;
   width: 50%;
   margin-top: 15px;
+}
+/********Ipad*********/
+@media (min-width: 600px) {
+  /********First Page*********/
+  .first-page_content article {
+    background: white;
+    border: lightgray solid thin;
+    margin: 0 60px;
+    position: absolute;
+    top: 50vh;
+    z-index: 1;
+    animation-name: phase-in-article;
+    animation-duration: 1.2s;
+    padding-bottom: 20px;
+    box-shadow: lightgray 0px 10px 20px;
+    border-radius: 0.3em;
+  }
+  @keyframes phase-in-article {
+    from {
+      opacity: 0;
+      transform: translateY(80vh);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .first-page_content article h1 {
+    font-size: 4.3em;
+    margin: 10px 20px;
+    color: var(--main-grey);
+  }
+  .first-page_content article p {
+    font-size: 2em;
+    margin: 0 20px;
+    line-height: 1.4;
+  }
+  /********Second Page*********/
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 100px 80px;
+  }
+  h1.second-page_heading {
+    text-align: center;
+    color: var(--main-grey);
+    font-size: 6em;
+    font-weight: 300;
+    margin: 0 40px;
+  }
+  .smoothie,
+  .tea,
+  .blender {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 60px;
+  }
+  .smoothie img,
+  .tea img,
+  .blender img {
+    object-fit: fill;
+    width: 30vw;
+    min-width: 100px;
+    max-width: 500px;
+    margin-bottom: 30px;
+  }
+  .second-page h2 {
+    font-size: 3em;
+    color: var(--main-grey);
+    margin-bottom: 20px;
+  }
+  .second-page p {
+    font-size: 1.3em;
+    margin: 0 80px;
+    text-align: left;
+    padding-bottom: 40px;
+    line-height: 1.4;
+  }
+  /********Third Page*********/
+  .images-wrapper {
+    background-image: url("./assets/abstracts/third_page_ab.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 90vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  .third-page article h1 {
+    font-size: 4em;
+    margin: 0 30px;
+    color: var(--main-grey);
+    text-align: center;
+  }
+  .menu-giant-button,
+  .location-giant-button {
+    text-align: center;
+    border: var(--main-grey) solid thin;
+    font-size: 2.5em;
+    border-radius: 2em;
+    width: 50%;
+    margin-top: 30px;
+  }
 }
