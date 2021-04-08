@@ -1,23 +1,23 @@
 class HamburgerIcon {
   constructor() {
     this.icon = document.querySelector(".hamburger-icon");
+    this.icon.addEventListener("click", this.openMenu);
     this.topLine = document.querySelector(".top-line");
     this.midLine = document.querySelector(".mid-line");
     this.bottLine = document.querySelector(".bott-line");
-    this.icon.addEventListener("click", this.openMenu);
     this.open = false;
   }
   openMenu = () => {
     if (!this.open) {
-      this.topLine.style.transform = `rotate(330deg)`;
-      this.bottLine.style.transform = `rotate(330deg)`;
-      this.midLine.style.display = "none";
+      this.topLine.style.transform = `rotate(-45deg)`;
+      this.bottLine.style.transform = `rotate(-45deg)`;
+      this.midLine.style.transform = "rotate(-45deg)";
       this.open = true;
       this.controlFrontLayer("18vh");
       return;
     }
     this.topLine.style.transform = `rotate(0deg)`;
-    this.midLine.style.display = "block";
+    this.midLine.style.transform = "rotate(0deg)";
     this.bottLine.style.transform = `rotate(0deg)`;
     this.open = false;
     //Set default dropdown position

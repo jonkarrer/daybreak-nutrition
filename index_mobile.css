@@ -25,7 +25,7 @@ main {
   border-radius: 1em 1em 0 0;
   overflow-y: scroll;
   overflow-x: hidden;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
   z-index: 1;
   background: snow;
 }
@@ -83,7 +83,7 @@ nav a {
   background: white;
   margin: 3.5px 0;
   border-radius: 2em;
-  transition: all 0.5s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 /********First Page*********/
@@ -152,7 +152,7 @@ nav a {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 .second-page_abstract-bg {
   display: none;
@@ -185,13 +185,13 @@ h1.second-page_heading {
 .tea img,
 .blender img {
   object-fit: fill;
-  width: 15vw;
+  width: 30vw;
   min-width: 100px;
-  max-width: 800px;
+  max-width: 200px;
   margin-bottom: 25px;
 }
 .second-page h2 {
-  font-size: calc(1vw + 1.2em);
+  font-size: 2em;
   color: var(--main-grey);
   margin-bottom: 10px;
 }
@@ -222,7 +222,6 @@ h1.second-page_heading {
   background-size: contain;
   width: 90vw;
   height: 45vh;
-  max-width: 1000px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -236,7 +235,6 @@ h1.second-page_heading {
 .images-container {
   display: flex;
   width: 60%;
-  margin: auto;
   flex-wrap: wrap;
 }
 .mySlides {
