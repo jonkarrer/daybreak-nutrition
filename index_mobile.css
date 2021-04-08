@@ -210,38 +210,40 @@ h1.second-page_heading {
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding-bottom: 40px;
 }
 .images-wrapper {
   background-image: url("./assets/abstracts/third_page_ab.svg");
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 400px;
+  background-size: contain;
+  width: 90vw;
+  height: 45vh;
+  max-width: 1000px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  vertical-align: bottom;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.images-wrapper button {
+  outline: none;
+  border: none;
+  font-size: 3em;
 }
 .images-container {
   display: flex;
+  width: 60%;
+  margin: auto;
   flex-wrap: wrap;
-  width: 85%;
-  margin-right: 20px;
 }
-li {
-  list-style: none;
-  height: 80px;
-  flex-grow: 1;
-  margin: 5px;
-}
-li:last-child {
-  flex-grow: 10;
-}
-.images-container img {
-  max-height: 100%;
-  min-width: 100%;
-  object-fit: cover;
+.mySlides {
+  display: none;
+  object-fit: fill;
+  width: 1vw;
+  min-width: 150px;
+  max-width: 400px;
 }
 .third-page article {
   width: 100vw;
@@ -251,7 +253,7 @@ li:last-child {
   align-items: center;
 }
 .third-page article h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   margin: 0 30px;
   color: var(--main-grey);
   text-align: center;
