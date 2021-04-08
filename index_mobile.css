@@ -272,6 +272,7 @@ h1.second-page_heading {
   width: 50%;
   margin-top: 15px;
 }
+
 /********Ipad*********/
 @media (min-width: 600px) {
   /********First Page*********/
