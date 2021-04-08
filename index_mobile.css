@@ -20,7 +20,7 @@ body {
 }
 main {
   position: fixed;
-  top: 55px;
+  top: 8vh;
   bottom: 0;
   border-radius: 1em 1em 0 0;
   overflow-y: scroll;
@@ -275,6 +275,51 @@ h1.second-page_heading {
 
 /********Ipad*********/
 @media (min-width: 600px) {
+  main {
+    position: fixed;
+    top: 10vh;
+    bottom: 0;
+    border-radius: 1em 1em 0 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: all 0.2s ease;
+    z-index: 1;
+    background: snow;
+  }
+  header img {
+    object-fit: fill;
+    width: 180px;
+    max-width: 300px;
+    margin: 5px 20px;
+  }
+  nav a {
+    font-size: 2em;
+    padding: 2px 15px 2px;
+    margin: 7px;
+    border: white solid thin;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 2em;
+    font-weight: bold;
+  }
+  .hamburger-icon {
+    height: 50px;
+    width: 70px;
+    margin: 0 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .top-line,
+  .mid-line,
+  .bott-line {
+    width: 80%;
+    height: 4px;
+    background: white;
+    margin: 3.5px 0;
+    border-radius: 2em;
+    transition: all 0.2s ease-out;
+  }
   /********First Page*********/
   .first-page_content article {
     background: white;
