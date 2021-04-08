@@ -121,7 +121,7 @@ nav a {
   }
 }
 .first-page_content article h1 {
-  font-size: 2.7em;
+  font-size: 3em;
   margin: 10px 20px;
   color: var(--main-grey);
 }
@@ -148,7 +148,7 @@ nav a {
   display: grid;
   grid-template-rows: auto auto;
   position: relative;
-  margin-top: 15%;
+  margin-top: 12%;
   background-image: url("./assets/abstracts/sec_page_abstract_bg.svg");
   background-repeat: no-repeat;
   background-position: bottom;
@@ -160,7 +160,7 @@ nav a {
 h1.second-page_heading {
   text-align: center;
   color: var(--main-grey);
-  font-size: calc(3vw + 1.8em);
+  font-size: 3em;
   font-weight: 300;
   margin: 0 40px;
 }
@@ -252,7 +252,7 @@ li:last-child {
   align-items: center;
 }
 .third-page article h1 {
-  font-size: calc(3vw + 1.8em);
+  font-size: 3em;
   margin: 0 30px;
   color: var(--main-grey);
   text-align: center;
