@@ -5,7 +5,7 @@
 :root {
   --main-beige: #f3f6e6;
   --main-grey: #707070;
-  --headline-font: clamp(4em, 5vw, 10em);
+  --headline-font: clamp(3em, 5vw, 10em);
 }
 html,
 body {
@@ -48,6 +48,9 @@ header nav a {
   margin: 0 20px;
 }
 /********Menu*********/
+.drink-section {
+  padding: 30px 0;
+}
 .drink-section h1 {
   font-size: var(--headline-font);
   margin: 10px;
