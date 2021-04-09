@@ -2,6 +2,17 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --main-grey: #707070;
+  --main-beige: #f3f6e6;
+}
+a {
+  text-decoration: none;
+}
+/********General*********/
+html {
+  background: var(--main-grey);
+}
 html,
 body {
   padding: 0;
@@ -10,6 +21,70 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+main {
+  position: fixed;
+  top: 9vh;
+  bottom: 0;
+  border-radius: 1em 1em 0 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition: all 0.2s ease;
+  z-index: 1;
+  background: snow;
+  width: 100vw;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  width: 100vw;
+}
+header img {
+  object-fit: fill;
+  width: 18vh;
+  max-width: 120px;
+  margin: 5px 20px;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 10vh;
+  width: 100vw;
+}
+header nav a {
+  font-size: 1.4em;
+  padding: 1px 10px 2px;
+  margin: 7px;
+  border: white solid thin;
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 2em;
+  font-weight: bold;
+}
+.hamburger-icon {
+  height: 30px;
+  width: 50px;
+  margin: 0 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.top-line,
+.mid-line,
+.bott-line {
+  width: 80%;
+  height: 2px;
+  background: white;
+  margin: 3.5px 0;
+  border-radius: 2em;
+  transition: all 0.2s ease-out;
+}
+/********Menu*********/
 .drink-section h1 {
   font-size: 11vw;
   margin: 10px;

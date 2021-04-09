@@ -6,6 +6,9 @@
   --main-grey: #707070;
   --main-beige: #f3f6e6;
 }
+a {
+  text-decoration: none;
+}
 /********General*********/
 html {
   background: var(--main-grey);
@@ -18,7 +21,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-main {
+#front-layer {
   position: fixed;
   top: 9vh;
   bottom: 0;
