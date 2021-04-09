@@ -45,8 +45,8 @@ header {
 }
 header img {
   object-fit: fill;
-  width: 100px;
-  max-width: 300px;
+  width: 18vh;
+  max-width: 120px;
   margin: 5px 20px;
 }
 nav {
