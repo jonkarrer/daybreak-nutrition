@@ -79,9 +79,15 @@ summary {
   font-weight: bold;
   text-align: center;
 }
+.see-flavors:hover {
+  cursor: pointer;
+}
 .flavors-container summary {
   font-size: clamp(1em, 3vw, 3em);
   margin: 10px;
+}
+.flavors-container summary:hover {
+  cursor: pointer;
 }
 ul {
   list-style: none;
@@ -92,10 +98,31 @@ ul li {
   padding: 10px;
   font-size: clamp(1em, 3vw, 3em);
 }
+ul li:hover {
+  cursor: pointer;
+}
 ul li::after {
   content: "|";
   padding-left: 15px;
 }
 ul li:last-child::after {
   content: "";
+}
+#berry {
+  color: purple;
+}
+#lime {
+  color: darkgreen;
+}
+#tropical {
+  color: darkkhaki;
+}
+#orange {
+  color: orange;
+}
+#traditional {
+  color: rgba(78, 32, 32, 0.836);
+}
+#dulce {
+  color: burlywood;
 }
