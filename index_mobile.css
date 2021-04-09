@@ -88,7 +88,22 @@ nav a {
   border-radius: 2em;
   transition: all 0.2s ease-out;
 }
-
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20vh;
+  left: 30px;
+}
+.contact-container h2 {
+  font-size: 8vw;
+}
+.contact-container a {
+  font-size: 7vw;
+  padding: 10px;
+  text-decoration: underline;
+  color: white;
+}
 /********First Page*********/
 .first-page {
   width: 100vw;

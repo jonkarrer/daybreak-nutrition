@@ -8,6 +8,10 @@
 }
 a {
   text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  cursor: pointer;
 }
 /********General*********/
 html {
@@ -56,6 +60,7 @@ header nav {
   align-items: center;
   position: absolute;
   top: 10vh;
+  right: 10px;
   width: 100vw;
 }
 header nav a {
@@ -86,9 +91,25 @@ header nav a {
   border-radius: 2em;
   transition: all 0.2s ease-out;
 }
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20vh;
+  left: 30px;
+}
+.contact-container h2 {
+  font-size: 8vw;
+}
+.contact-container a {
+  font-size: 7vw;
+  padding: 10px;
+  text-decoration: underline;
+  color: white;
+}
 /********Menu*********/
 .drink-section h1 {
-  font-size: 11vw;
+  font-size: 10vw;
   margin: 10px;
 }
 .drink-section h3 {
@@ -122,6 +143,25 @@ ul li {
   padding-bottom: 10px;
   font-size: 1.1em;
 }
+#berry {
+  color: purple;
+}
+#lime {
+  color: darkgreen;
+}
+#tropical {
+  color: darkkhaki;
+}
+#orange {
+  color: orange;
+}
+#traditional {
+  color: rgba(78, 32, 32, 0.836);
+}
+#dulce {
+  color: burlywood;
+}
+
 @media (min-width: 600px) {
   main {
     position: fixed;

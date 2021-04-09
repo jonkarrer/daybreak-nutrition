@@ -15,6 +15,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.back-layer {
+  display: none;
+} /*Turn of contacts*/
 main {
   padding-top: 120px;
   padding-bottom: 80px;
