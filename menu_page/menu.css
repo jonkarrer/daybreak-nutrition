@@ -16,8 +16,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 main {
-  margin-top: 120px;
+  padding-top: 120px;
   padding-bottom: 80px;
+  width: 70%;
+  max-width: 15000;
+  margin: auto;
 }
 a {
   text-decoration: none;
@@ -46,37 +49,50 @@ header nav a {
 }
 /********Menu*********/
 .drink-section h1 {
-  font-size: 3vw;
+  font-size: var(--headline-font);
   margin: 10px;
+  text-align: center;
 }
 .drink-section h3 {
-  font-size: 1.2em;
+  font-size: clamp(1em, 3vw, 3em);
   margin: 10px;
+  text-align: center;
 }
 .nutrition-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   margin: 10px;
 }
 .nutrition-container a {
-  font-size: 1.2em;
+  font-size: clamp(1em, 3vw, 2.5em);
   margin-right: 15px;
+  text-align: center;
 }
 summary {
   margin: 10px;
 }
 .see-flavors {
-  font-size: 1.5em;
+  font-size: clamp(1em, 3vw, 3em);
   font-weight: bold;
+  text-align: center;
 }
 .flavors-container summary {
-  font-size: 1.3em;
+  font-size: clamp(1em, 3vw, 3em);
   margin: 10px;
 }
 ul {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 ul li {
-  padding-bottom: 10px;
-  font-size: 1.1em;
+  padding: 10px;
+  font-size: clamp(1em, 3vw, 3em);
+}
+ul li::after {
+  content: "|";
+  padding-left: 15px;
+}
+ul li:last-child::after {
+  content: "";
 }
