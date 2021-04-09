@@ -1,3 +1,11 @@
+/*Turn off mobile components*/
+.back-layer {
+  display: none;
+} /*Turn of contacts*/
+#contact-button {
+  display: none;
+} /*Dont display mobile contact click function*/
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -15,9 +23,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.back-layer {
-  display: none;
-} /*Turn of contacts*/
 main {
   padding-top: 120px;
   padding-bottom: 80px;
@@ -28,6 +33,9 @@ main {
 a {
   text-decoration: none;
   color: inherit;
+}
+a:hover {
+  cursor: pointer;
 }
 /********NAVBAR*********/
 header {
