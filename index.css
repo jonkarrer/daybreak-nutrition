@@ -20,6 +20,10 @@ body {
   position: absolute;
   z-index: -1;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 /********NAVBAR*********/
 header {
   display: flex;
