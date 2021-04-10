@@ -44,7 +44,7 @@ header {
 header img {
   object-fit: fill;
   width: 9vw;
-  min-width: 100px;
+  min-width: 130px;
   max-width: 300px;
   margin: 10px 50px;
 }
