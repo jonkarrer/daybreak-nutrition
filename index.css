@@ -1,15 +1,4 @@
 /*Turn of mobile components*/
-.back-layer {
-  position: fixed;
-  top: 7vw;
-  left: 300px;
-  background-color: white;
-  z-index: 10;
-  padding: 0px;
-  transition: all 0.5s ease-in;
-  height: 0;
-  overflow: hidden;
-} /*Dont show contact info*/
 #contact-button {
   display: none;
 } /*Dont display mobile contact click function*/
@@ -63,6 +52,17 @@ header img {
 nav a {
   font-size: clamp(2rem, 2vw, 4em);
   margin: 0 20px;
+}
+.back-layer {
+  position: fixed;
+  top: 7vw;
+  left: 300px;
+  background-color: white;
+  z-index: 10;
+  padding: 0px;
+  transition: all 0.5s ease-in;
+  height: 0;
+  overflow: hidden;
 }
 .contact-container {
   display: flex;
