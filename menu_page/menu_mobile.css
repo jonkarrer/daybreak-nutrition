@@ -103,6 +103,7 @@ header nav a {
   position: absolute;
   top: 20vh;
   left: 30px;
+  height: auto;
 }
 .contact-container h2 {
   font-size: 8vw;
@@ -128,7 +129,7 @@ header nav a {
   margin: 10px;
 }
 .nutrition-container a {
-  font-size: 1.2em;
+  font-size: 1em;
   margin-right: 15px;
 }
 summary {

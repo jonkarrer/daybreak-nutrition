@@ -28,7 +28,7 @@ class HamburgerIcon {
   };
   showMobileContact = () => {
     if (!this.isContactOpen) {
-      this.controlFrontLayer("56vh");
+      this.controlFrontLayer("70vh");
       this.isContactOpen = true;
       return;
     }
