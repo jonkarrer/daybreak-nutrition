@@ -2,7 +2,6 @@
 #contact-button {
   display: none;
 } /*Dont display mobile contact click function*/
-
 * {
   margin: 0;
   box-sizing: border-box;
@@ -80,7 +79,6 @@ nav a {
   text-decoration: underline;
   color: black;
 }
-
 /********First Page*********/
 .first-page {
   width: 100vw;
@@ -129,7 +127,6 @@ nav a {
     opacity: 1;
   }
 }
-
 /********Second Page*********/
 .second-page {
   height: 100vh;
@@ -188,7 +185,6 @@ h1.second-page_heading {
   text-align: left;
   line-height: 1.4;
 }
-
 /********Third Page*********/
 .third-page {
   height: 100vh;

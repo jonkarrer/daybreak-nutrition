@@ -2,6 +2,9 @@
 #contact-button-desktop {
   display: none;
 }
+.first-page_abstract-bg {
+  display: none;
+} /*turn off desktop background*/
 * {
   margin: 0;
   box-sizing: border-box;
@@ -36,10 +39,6 @@ body {
   z-index: 1;
   background: snow;
 }
-.first-page_abstract-bg {
-  display: none;
-} /*turn off desktop background*/
-
 /********NAVBAR*********/
 header {
   display: flex;
@@ -160,7 +159,6 @@ nav a {
   min-width: 450px; /*Crops image perfectly*/
   max-width: 1000px;
 }
-
 /********Second Page*********/
 .second-page {
   height: auto;
@@ -294,7 +292,6 @@ h1.second-page_heading {
   width: 50%;
   margin-top: 15px;
 }
-
 /********Ipad*********/
 @media (min-width: 600px) {
   main {

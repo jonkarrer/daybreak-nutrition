@@ -2,7 +2,6 @@
 #contact-button-desktop {
   display: none;
 }
-
 * {
   margin: 0;
   box-sizing: border-box;
@@ -10,13 +9,6 @@
 :root {
   --main-grey: #707070;
   --main-beige: #f3f6e6;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-a:hover {
-  cursor: pointer;
 }
 /********General*********/
 html {
@@ -43,7 +35,13 @@ main {
   width: 100vw;
   padding-bottom: 50px;
 }
-
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  cursor: pointer;
+}
 /********Navbar*********/
 header {
   display: flex;
@@ -168,7 +166,7 @@ ul li {
 #dulce {
   color: burlywood;
 }
-
+/********Ipad*********/
 @media (min-width: 600px) {
   main {
     position: fixed;

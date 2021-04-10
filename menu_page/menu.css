@@ -2,7 +2,6 @@
 #contact-button {
   display: none;
 } /*Dont display mobile contact click function*/
-
 * {
   margin: 0;
   box-sizing: border-box;
