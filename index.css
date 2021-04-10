@@ -1,3 +1,11 @@
+/*Turn of mobile components*/
+.back-layer {
+  display: none;
+} /*Dont show contact info*/
+#contact-button {
+  display: none;
+} /*Dont display mobile contact click function*/
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -15,18 +23,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.back-layer {
-  display: none;
-} /*Dont show contact info*/
-#contact-button {
-  display: none;
-} /*Dont display mobile contact click function*/
 .first-page_abstract-bg {
   width: 80vw;
   position: absolute;
   z-index: -1;
 }
-
 a {
   text-decoration: none;
   color: inherit;

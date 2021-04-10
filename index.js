@@ -3,7 +3,7 @@ class HamburgerIcon {
     this.icon = document.querySelector(".hamburger-icon");
     this.mobileContactButton = document.getElementById("contact-button");
     this.icon.addEventListener("click", this.openMenu);
-    this.mobileContactButton.addEventListener("click", this.showContact);
+    this.mobileContactButton.addEventListener("click", this.showMobileContact);
     this.topLine = document.querySelector(".top-line");
     this.midLine = document.querySelector(".mid-line");
     this.bottLine = document.querySelector(".bott-line");
@@ -26,9 +26,9 @@ class HamburgerIcon {
     //Set default dropdown position
     this.controlFrontLayer("9vh");
   };
-  showContact = () => {
+  showMobileContact = () => {
     if (!this.isContactOpen) {
-      this.controlFrontLayer("56vh");
+      this.controlFrontLayer("70vh");
       this.isContactOpen = true;
       return;
     }

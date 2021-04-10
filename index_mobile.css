@@ -1,3 +1,7 @@
+/*Turn of desktop components*/
+#contact-button-desktop {
+  display: none;
+}
 * {
   margin: 0;
   box-sizing: border-box;
