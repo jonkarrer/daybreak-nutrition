@@ -2,6 +2,9 @@
 #contact-button-desktop {
   display: none;
 }
+.second-page_abstract-bg {
+  display: none;
+}
 .first-page_abstract-bg {
   display: none;
 } /*turn off desktop background*/
@@ -157,7 +160,6 @@ nav a {
   object-fit: fill;
   width: 100vw;
   min-width: 450px; /*Crops image perfectly*/
-  max-width: 1000px;
 }
 /********Second Page*********/
 .second-page {
@@ -172,9 +174,6 @@ nav a {
   background-position: bottom;
   background-size: cover;
   padding-bottom: 40px;
-}
-.second-page_abstract-bg {
-  display: none;
 }
 h1.second-page_heading {
   text-align: center;
@@ -276,7 +275,8 @@ h1.second-page_heading {
   color: var(--main-grey);
   text-align: center;
 }
-.menu-giant-button {
+.menu-giant-button,
+.location-giant-button {
   text-align: center;
   border: var(--main-grey) solid thin;
   font-size: 2em;
@@ -285,11 +285,6 @@ h1.second-page_heading {
   margin-top: 30px;
 }
 .location-giant-button {
-  text-align: center;
-  border: var(--main-grey) solid thin;
-  font-size: 2em;
-  border-radius: 2em;
-  width: 50%;
   margin-top: 15px;
 }
 /********Ipad*********/
