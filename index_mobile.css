@@ -110,12 +110,11 @@ nav a {
 }
 /********First Page*********/
 .first-page {
+  height: auto;
   width: 100vw;
-  overflow: scroll;
 }
 .first-page_content {
-  height: 90vh;
-  max-width: 2000px;
+  height: 100vh;
   position: relative;
   overflow-x: hidden; /*Cuts image off*/
 }
@@ -247,6 +246,7 @@ h1.second-page_heading {
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
+  height: auto;
 }
 .images-wrapper button {
   outline: none;
@@ -310,7 +310,7 @@ h1.second-page_heading {
   }
   header img {
     object-fit: fill;
-    width: 180px;
+    width: 140px;
     max-width: 300px;
     margin: 5px 20px;
   }
@@ -343,6 +343,14 @@ h1.second-page_heading {
     transition: all 0.2s ease-out;
   }
   /********First Page*********/
+  .first-page {
+    height: auto;
+  }
+  .first-page_content {
+    height: 120vh;
+    position: relative;
+    overflow-x: hidden; /*Cuts image off*/
+  }
   .first-page_content article {
     background: white;
     border: lightgray solid thin;
@@ -427,7 +435,7 @@ h1.second-page_heading {
     background-position: center;
     background-size: contain;
     width: 90vw;
-    height: 50vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
