@@ -275,17 +275,13 @@ h1.second-page_heading {
   color: var(--main-grey);
   text-align: center;
 }
-.menu-giant-button,
-.location-giant-button {
+.menu-giant-button {
   text-align: center;
   border: var(--main-grey) solid thin;
   font-size: 2em;
   border-radius: 2em;
   width: 50%;
   margin-top: 30px;
-}
-.location-giant-button {
-  margin-top: 15px;
 }
 /********Ipad*********/
 @media (min-width: 600px) {

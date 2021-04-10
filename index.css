@@ -258,12 +258,3 @@ h1.second-page_heading {
   width: 60%;
   max-width: 700px;
 }
-.location-giant-button {
-  text-align: center;
-  border: var(--main-grey) solid thin;
-  font-size: 3em;
-  border-radius: 2em;
-  margin: 0px 100px;
-  width: 60%;
-  max-width: 700px;
-}
